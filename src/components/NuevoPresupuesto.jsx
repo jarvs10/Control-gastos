@@ -12,6 +12,10 @@ const NuevoPresupuesto = ({ presupuesto, setPresupuesto, setIsValid }) => {
         if(presupuesto <= 0){
             setMensaje('Presupuesto Invalido');
 
+            setTimeout(() => {
+                setMensaje('');
+            }, 2000);
+
             return;
         }
 
